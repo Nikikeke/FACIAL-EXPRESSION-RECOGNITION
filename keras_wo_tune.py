@@ -131,7 +131,7 @@ x_test_private = x_test_private.reshape(-1, 48, 48, 1)
 y_test_private = np.utils.to_categorical(y_test_private)
 
 # evaluate model on private test data
-score = model.evaluate(x_test_private, y_test_private, verbose=0)
+score = model.evaluate(x_test_private, y_test_private, verbose=1)
 score
 
 
